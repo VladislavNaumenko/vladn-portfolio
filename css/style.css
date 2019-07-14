@@ -1,0 +1,370 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 17%
+}
+.logo h1{
+    color: #fff;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.main{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/bg-header.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+    position: relative;
+}
+#menu-checkbox{
+    display: none;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+   
+}
+.menu-link:hover{
+    border-bottom: 1px solid #fff;
+}
+
+
+.menu-link{
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.email-me-btn{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-transform: uppercase; 
+}
+.email-me-btn:hover{
+    border-color: transparent;
+    background: #bc10bc;
+}
+.main__text{
+    top: 100px;
+    position: relative;
+    text-align: center;
+    color: #fff;   
+}
+.main__text span{
+    font-weight: 700;
+}
+.main__text h1{
+    font-size: 80px;
+    margin: 0;
+    text-decoration: underline;
+    
+}
+
+
+
+.main-arrow{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+
+}
+
+.arrow-down img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    line-height: 55px;
+    border-radius: 50%;
+   box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+   background-color: #fff;
+   
+}
+
+
+
+.tech{
+    background-color: #f9fafc;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+.tech-header h2{
+    color: #4f4f6f;
+    border-bottom: 3px solid #000;
+    font-size: 40px;
+}
+.tech-tags{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;
+    width: 70%;;
+    align-items: stretch;
+}
+.tech-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10%;
+    border: 1px solid #ddd;
+    
+}
+.tech-tag img{
+    width: 80px;
+    height: initial;
+}
+
+.tech-tag:hover{
+    box-shadow: 0px 0px 81.88px 10.12px rgba(204, 204, 223, 0.71);
+}
+
+.projects{
+    background: url(../img/bg-world.png) no-repeat;
+    background-size: cover;
+    height: 800px;
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects h2{
+    border-bottom: 3px solid #fff;
+}
+.projects-content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-content-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.projects-content-list img{ 
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    transition: 3s;
+}
+.projects-content-list img:hover{
+transform: translateY(20px);
+transform: rotateX(5deg) rotateZ(-5deg) rotateY(-15deg);
+  transform-style: preserve-3d;
+}
+
+
+
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    text-align: center;
+}
+
+.education h2{
+    font-size: 40px;
+    border-bottom: 3px solid #000;
+}
+.education-logo{
+    background: url(../img/logo-mephi.png)  no-repeat;
+    height: 200px;
+    width: 200px;
+    border: 2xp solid red;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+    position: relative;
+}
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 17%;
+}
+
+.footer-logo h1{
+    color: #000;
+    margin: 20px;
+}
+.footer-logo img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+.footer-menu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.footer-menu{
+    width: 60%;
+}
+.footer-menu-link{
+    color: #000;
+    text-decoration: none;
+}
+.footer-menu-link:hover{
+    color: #7156E0;
+}
+.footer-get-started-btn{
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-transform: uppercase; 
+}
+.footer-get-started-btn:hover{
+    border-color: transparent;
+    background-color: #bc10bc;
+    color: #fff;
+}
+.footer-links{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.separator{
+    width: 95%;
+    height: 1px;
+    background-color: #999;
+    
+}
+.soc-links img{
+    width: 20px;
+}
+@media (max-width : 320px){}
+@media (max-width: 768px) {
+
+@media (max-width: 992px) {
+    .logo{
+        padding-top: 20px;
+        width: 30%;
+    }
+
+
+
+    
+
+
+    
+    .menu{
+        width: 70%;
+    
+    }
+    .menu-link{
+        margin: 5px;
+        padding: 5px;
+    }
+    .email-me-btn{
+        border: 1px solid #fff;
+        padding: 10px 10px;
+    }
+    .projects{
+       
+        width: 100%;
+       
+       
+    }
+    .projects-content{
+        width: 95%;
+        
+    }
+    .projects-content-list{
+      
+      align-content:space-between;
+       
+    }
+    .education{
+        height: 60vh;
+    }
+    .education-items{
+        width: 80%;
+    }
+    .footer-logo{
+      
+        padding: 10px;
+    }
+}
+@media (max-width: 1200px) {
+    .logo{
+        width: 28%;
+    }
+    .menu{
+        width: 70%;
+    
+    }
+    .projects{
+        height: 650px;
+        
+    }
+    .projects-content-list{
+        width: 80%;
+    }
+    .education{
+        height: 60vh;
+    }
+    .education-items{
+        width: 80%;
+    }
+    .footer-logo{
+        
+        width: 28%;
+    }
+}
